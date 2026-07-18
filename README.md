@@ -1,10 +1,10 @@
-# 🍗 Fast Food Restaurant — Sales Forecasting
+# Fast Food Restaurant — Sales Forecasting
 
 > **End-to-end machine learning pipeline to forecast daily restaurant sales one week ahead, enabling smarter stock ordering and staff rostering.**
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Restaurants waste thousands of pounds every year on overstocked ingredients and inefficient staffing — because they rely on gut instinct rather than data. This project builds a **7-day sales forecasting model** that combines historical sales, weather data, and calendar events (bank holidays, school holidays, special events) to predict daily revenue with ~96% accuracy.
 
@@ -12,7 +12,7 @@ Built as a prototype for a fast food restaurant using 3 years of daily sales dat
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 
 | Problem | Impact |
 |---|---|
@@ -24,7 +24,7 @@ Built as a prototype for a fast food restaurant using 3 years of daily sales dat
 
 ---
 
-## 📊 Demo Output
+## Demo Output
 
 ```
 ================================================
@@ -46,7 +46,7 @@ Model Accuracy: 96.1% | MAE: ±£155/day
 
 ---
 
-## 🗂️ Data Sources
+## Data Sources
 
 Three CSV files feed the pipeline:
 
@@ -56,11 +56,11 @@ Three CSV files feed the pipeline:
 | `calendar_events.csv` | Holidays & special events | `date`, `day`, `specials`, `holiday_for_adults`, `holiday_for_kids` |
 | `weather_data.csv` | Daily weather conditions | `date`, `temperature`, `humidity`, `sky_status` |
 
-> ⚠️ Real data is not included. The notebook generates realistic dummy data automatically in Cell 1.
+> Real data is not included. The notebook generates realistic dummy data automatically in Cell 1.
 
 ---
 
-## 🏗️ Pipeline Architecture
+## Pipeline Architecture
 
 ```
 ┌─────────────────┐   ┌──────────────────┐   ┌─────────────────┐
@@ -102,7 +102,7 @@ Three CSV files feed the pipeline:
 
 ---
 
-## ⚙️ Feature Engineering
+## Feature Engineering
 
 18 features are engineered from the 3 raw data sources:
 
@@ -116,7 +116,7 @@ Three CSV files feed the pipeline:
 
 ---
 
-## 🤖 Model
+## Model
 
 | Parameter | Value | Reason |
 |---|---|---|
@@ -134,7 +134,7 @@ These hyperparameters were found via a 200-combination random grid search.
 
 ---
 
-## 📈 Results
+## Results
 
 | Metric | Value |
 |---|---|
@@ -146,7 +146,7 @@ These hyperparameters were found via a 200-combination random grid search.
 
 ---
 
-## 🗺️ Notebook Structure
+## Notebook Structure
 
 | Cell | Description |
 |---|---|
@@ -165,7 +165,7 @@ These hyperparameters were found via a 200-combination random grid search.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repo
 ```bash
@@ -188,7 +188,7 @@ The notebook generates dummy data automatically. To use real data, replace the 3
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -207,7 +207,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Live weather API integration (Open-Meteo / Met Office)
 - [ ] Hourly sales breakdown for more granular forecasting
@@ -218,7 +218,7 @@ pip install -r requirements.txt
 
 ---
 
-## 👤 Author
+## Author
 
 **Sunny Shedge**  
 M.Sc. Data Science — University of Sussex  
@@ -229,6 +229,6 @@ M.Sc. Data Science — University of Sussex
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use, adapt, and build on.
