@@ -1,4 +1,4 @@
-# Fast Food Restaurant — Sales Forecasting
+# Fast Food Restaurant - Sales Forecasting
 
 > **End-to-end machine learning pipeline to forecast daily restaurant sales one week ahead, enabling smarter stock ordering and staff rostering.**
 
@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-Restaurants waste thousands of pounds every year on overstocked ingredients and inefficient staffing — because they rely on gut instinct rather than data. This project builds a **7-day sales forecasting model** that combines historical sales, weather data, and calendar events (bank holidays, school holidays, special events) to predict daily revenue with ~96% accuracy.
+Restaurants waste thousands of pounds every year on overstocked ingredients and inefficient staffing - because they rely on gut instinct rather than data. This project builds a **7-day sales forecasting model** that combines historical sales, weather data, and calendar events (bank holidays, school holidays, special events) to predict daily revenue with ~96% accuracy.
 
 Built as a prototype for a fast food restaurant using 3 years of daily sales data.
 
@@ -74,11 +74,11 @@ Three CSV files feed the pipeline:
               └────────┬────────┘
                        ▼
               ┌─────────────────┐
-              │   Data Cleaning │  Stage 2 — outliers, nulls
+              │   Data Cleaning │  Stage 2 - outliers, nulls
               └────────┬────────┘
                        ▼
               ┌──────────────────────┐
-              │  Feature Engineering │  Stage 3 — 18 features
+              │  Feature Engineering │  Stage 3 - 18 features
               │  • Lag sales 1/7/14d │
               │  • Rolling avg 7/28d │
               │  • Day of week       │
@@ -87,11 +87,11 @@ Three CSV files feed the pipeline:
               └────────┬─────────────┘
                        ▼
               ┌─────────────────┐
-              │  XGBoost Model  │  Stage 4 — trained on 3 years
+              │  XGBoost Model  │  Stage 4 - trained on 3 years
               └────────┬────────┘
                        ▼
               ┌─────────────────┐
-              │   Validation    │  Stage 5 — MAE, MAPE on held-out data
+              │   Validation    │  Stage 5 - MAE, MAPE on held-out data
               └────────┬────────┘
                        ▼
               ┌─────────────────────────────────┐
@@ -111,7 +111,7 @@ Three CSV files feed the pipeline:
 | **Time** | Day of week, month, week number, is_weekend |
 | **Sales history** | Lag 1 day, lag 7 days, lag 14 days |
 | **Trend** | 7-day rolling avg, 28-day rolling avg |
-| **Weather** | Temperature, humidity, sky score (1–5) |
+| **Weather** | Temperature, humidity, sky score (1-5) |
 | **Calendar** | Bank holiday, school holiday, has special event, is Valentine's, is Christmas |
 
 ---
@@ -155,7 +155,7 @@ These hyperparameters were found via a 200-combination random grid search.
 | 3 | Data cleaning (outliers, nulls) |
 | 4 | Feature engineering (18 features) |
 | 5 | XGBoost model training |
-| 6 | Validation — actual vs predicted chart |
+| 6 | Validation - actual vs predicted chart |
 | 7 | Feature importance chart |
 | 8 | **7-day forecast** (edit weather/events here) |
 | 9 | Forecast chart with confidence band |
@@ -221,7 +221,7 @@ pip install -r requirements.txt
 ## Author
 
 **Sunny Shedge**  
-M.Sc. Data Science — University of Sussex  
+M.Sc. Data Science - University of Sussex  
 3+ years experience as Product Analyst  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/sunnyshedge)
@@ -231,4 +231,4 @@ M.Sc. Data Science — University of Sussex
 
 ## License
 
-MIT License — free to use, adapt, and build on.
+MIT License - free to use, adapt, and build on.
